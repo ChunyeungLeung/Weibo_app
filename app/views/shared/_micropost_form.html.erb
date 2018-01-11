@@ -1,9 +1,9 @@
 <%= form_for(@micropost) do |f| %>
 	<%= render 'shared/error_messages', object: f.object %>
 	<div class="field">
-		<%= f.text_area :content,placeholder: "Compose new micropost..." %>
+		<%= f.text_area :content,placeholder: "完成新的微博" %>
 	</div>
-	<%= f.submit "Post",class: "btn btn-primary" %>
+	<%= f.submit "发表",class: "btn btn-primary" %>
 	<span class="picture">
 		<%= f.file_field :picture %>
 	</span>

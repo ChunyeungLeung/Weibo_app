@@ -6,10 +6,10 @@ def edit
 	#	user.update_attribute(:activated, true)
 	#	user.update_attribute(:activated_at,Time.zone.now)
 		log_in user
-		flash[:success] = "Account activation!"
+		flash[:success] = "激活成功!"
 		redirect_to user
 	else
-		flash[:danger] = "Invalid activation link"
+		flash[:danger] = "此激活链接无效。"
 		redirect_to root_url
 	end
 end

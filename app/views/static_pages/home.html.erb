@@ -4,15 +4,12 @@
 			<section class="user_info">
 				<%= render 'shared/user_info' %>
 			</section>
-			<section class="stats">
-				<%= render 'shared/stats' %>
-			</section>
 			<section class="micropost_form">
 				<%= render 'shared/micropost_form' %>
 			</section>
 		</aside>
 		<div class="col-md-8">
-			<h3>Micropost Feed</h3>
+			<h3>最新动态</h3>
 			<%= render 'shared/feed' %>
 		</div>
 
@@ -20,11 +17,11 @@
 <% else %>
 
 <div class="center jumbotron">
-	<h1>Welcome to the Weibo App</h1>
+	<h1>微博APP欢迎你！</h1>
 	<!--	<h2>
-		This is the home page for the weibo application.
+		这里是我们的首页。
 		</h2> -->
-	<%= link_to "Sign up",signup_path,class: "btn btn-lg btn-primary"%>
+	<%= link_to "注册",signup_path,class: "btn btn-lg btn-primary"%>
 </div>
 <%#= link_to image_tag("igigig.jpg",alt:"IG logo") %>
 <% end %>
